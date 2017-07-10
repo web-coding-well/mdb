@@ -1,0 +1,21 @@
+server:
+  port: 8111
+spring:
+  datasource:
+    primary:
+      url: jdbc:mysql://localhost:3306/test1
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    secondary:
+      url: jdbc:mysql://localhost:3306/test2
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#spring.jpa.properties.hibernate.hbm2ddl.auto=create-drop

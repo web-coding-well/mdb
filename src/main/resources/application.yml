@@ -1,0 +1,20 @@
+server:
+  port: 8111
+
+spring:
+  datasource:
+    primary:
+      url: jdbc:mysql://localhost:3306/test1
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    secondary:
+      url: jdbc:mysql://localhost:3306/test2
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+      hibernate:
+        ddl-auto: update #自动建表
+      show-sql: true
+
